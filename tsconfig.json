@@ -1,24 +1,29 @@
 {
   "compilerOptions": {
+    "target": "esnext",
     "module": "commonjs",
-    "declaration": false,
-    "noImplicitAny": false,
-    "removeComments": true,
-    "noLib": false,
-    "allowSyntheticDefaultImports": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "target": "es6",
+    "lib": ["esnext"],
     "sourceMap": true,
-    "allowJs": true,
     "outDir": "./dist",
-    "baseUrl": "./src"
-  },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
-  ]
+    "removeComments": true,
+
+    "strict": true,
+    "strictPropertyInitialization": false,
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": {
+      "~@common/*": ["common/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
 }

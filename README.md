@@ -1,38 +1,25 @@
 # nest-starter
 
-## Description
+## 描述
 
-description
+NestJS 脚手架
 
-## Installation
-
-```bash
-$ npm install
-```
-
-## Running the app
+## 安装
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-npm run start:prod
+npm install
 ```
 
-## Test
+## 运行
+
+### 开发环境
 
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+npm run dev
 ```
 
+### 生产环境
+
+```bash
+npm run start
+```
